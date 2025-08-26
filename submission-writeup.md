@@ -1,0 +1,7 @@
+## Submission Write-up (≈175 words)
+
+**Prompt used:** “Generate a React + Vite user dashboard styled with TailwindCSS that includes a responsive sidebar, a top bar with search and profile placeholder, four statistics cards (with icons and delta badges), a data table with at least five columns and 15–30 rows of sample data (with client-side search, sorting and pagination), one simple Recharts line chart, and dark-mode toggle persisted in localStorage. Provide complete setup instructions, file tree, and a README. Add clear branding hooks (colors, typography, logo/title) and label them with comments.”
+
+**Changes made:** I customized branding for a clean, sustainable look by using brand tokens (primary sky-500, accent green-600) and Inter font, replaced the app title and logo, and tuned spacing and shadows. I implemented a dark-mode toggle with persistence, added a search bar in the top bar, sortable/paginated table, and status pills. The chart shows weekly sales for quick trend scanning. Structure is mobile-first with an off-canvas sidebar for small screens.
+
+**Challenges & solutions:** Ensuring dark mode worked consistently required using Tailwind’s `class` strategy and syncing the `<html>` class with localStorage. Table state (search + sort + pagination) needed careful ordering to avoid stale UI; I solved this with derived arrays and controlled state. I also verified hover/focus states for accessibility and adjusted contrast in dark mode.
